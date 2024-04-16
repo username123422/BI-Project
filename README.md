@@ -64,6 +64,12 @@ str(experiment_data)
 ##We want to extract the experiments from the HeLa Cell line from each data set
 
 ##Datasets
+
 ##normalized_counts_rna
 ##normalized_counts_ribo
 ##experiment_data
+
+##Trying to create a dataset with just the experiments from the HeLa cell line
+
+heLa_experiments <- unique(experiment_data$experiment_alias[experiment_data$cell_line == "HeLa"])
+
