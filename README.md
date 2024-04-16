@@ -69,7 +69,7 @@ str(experiment_data)
 ##normalized_counts_ribo
 ##experiment_data
 
-##Trying to create a dataset with just the experiments from the HeLa cell line
+##Trying to create a dataset with just the experiments from the HeLa cell line (from the data set with the experiments and cell lines)
 
 heLa_experiments <- unique(experiment_data$experiment_alias[experiment_data$cell_line == "HeLa"])
 
