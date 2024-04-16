@@ -58,6 +58,7 @@ test_df$nor_GSM546922 = test_df$GSM546922 / sum(test_df$GSM546922) * 1000000
 ## Loading Experiment data
 
 experiment_data <- read.csv("human_infor_train.csv")
+
 str(experiment_data)
 
 ## Subset Data 
