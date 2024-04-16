@@ -4,8 +4,8 @@
 
 
 
-##Normalize using count per million reads
-
+##Normalize  RNA abundance (Measured from RNA Seq Data) using count per million reads
+##This normalizes the entire RNA Abundance data set
 
 rna_cl_train_data <- rna_cl_train
 str(rna_cl_train)
@@ -28,4 +28,9 @@ counts_per_million(rna_cl_train)
 
 normalized_counts = counts_per_million(rna_cl_train[,-1]) 
 
+##Normalize Translation (Measured using ribosome profiling) using count per million reads
+
+
 ## Subset Data 
+## We want to extract the experiments from the HeLa Cell line from each data set
+
