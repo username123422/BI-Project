@@ -51,26 +51,7 @@ counts_per_million(ribo_cl_train)
 
 normalized_counts_ribo = counts_per_million(ribo_cl_train[,-1]) 
 
-##test : We did this test to verify that we did our normilization correctly by just doing the normilization on 1 experiment individually and comparing the values to those in the normalized_counts_rna
-test_df = rna_cl_train[,1:5]
-test_df$nor_GSM546922 = test_df$GSM546922 / sum(test_df$GSM546922) * 1000000
-
-## Loading Experiment data
-
-experiment_data <- read.csv("human_infor_train.csv")
-
-str(experiment_data)
-
 ## Subset Data 
 ##We want to extract the experiments from the HeLa Cell line from each data set
 
-##Datasets
-
-##normalized_counts_rna
-##normalized_counts_ribo
-##experiment_data
-
-##Trying to create a dataset with just the experiments from the HeLa cell line (from the data set with the experiments and cell lines)
-
-heLa_experiments <- unique(experiment_data$experiment_alias[experiment_data$cell_line == "HeLa"])
 
